@@ -2,17 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: #FFF;
+  background-color: #FFF;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.item {
+  transition: width 0.5s;
+  h1 {
+    transition: transform 0.5s;
+  }
+  img {
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  &.active {
+    width: 100%;
+    h1{
+      transform: scale(1.75);
+    }
+    img {
+      transform: rotate(-5deg) translate(-25%, -75%) scale(2.5);
+    }
+  }
+  &.inactive {
+    width: 0;
+    img {
+      opacity: 0;
+    }
+  }
 }

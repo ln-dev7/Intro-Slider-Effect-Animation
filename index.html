@@ -1,17 +1,39 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VITE APP / SCSS / GSAP / TAILWIND</title>
-  </head>
-  <body>
-    <div id="app">
-      <h1 className="text-3xl font-bold underline">
-       FUN ANIMATION TEMPLATE
-      </h1>  
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VITE APP / SCSS / GSAP / TAILWIND</title>
+</head>
+
+<body class="h-screen overflow-hidden">
+  <div id="app" class="w-full h-full">
+    <div class="relative w-full h-full flex items-center justify-center">
+      <div class="item cursor-pointer w-1/3 shrink-0 overflow-hidden h-full flex items-center justify-center relative bg-[#4A64ED]">
+        <h1 class="text-[180px]">BLUE</h1>
+        <img class="absolute w-[500px] shrink-0 -rotate-[40deg] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="/nike-blue.svg" alt="Nike Blue" />
+      </div>
+      <div class="item cursor-pointer w-1/3 shrink-0 overflow-hidden h-full flex items-center justify-center relative bg-[#FF5A5A]">
+        <h1 class="text-[180px]">RED</h1>
+        <img class="absolute w-[500px] shrink-0 -rotate-[40deg] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="/nike-red.svg" alt="Nike Red" />
+      </div>
+      <div class="item cursor-pointer w-1/3 shrink-0 overflow-hidden h-full flex items-center justify-center relative bg-[#FFCE6D]">
+        <h1 class="text-[180px]">YELLOW</h1>
+        <img class="absolute w-[500px] shrink-0 -rotate-[40deg] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="/nike-yellow.svg" alt="Nike Yellow" />
+      </div>
     </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    <div class="absolute flex items-center justify-between w-full top-0 p-2">
+      <img src="/nike.svg" alt="Nike" class="w-32" />
+      <div class="flex items-center justify-center gap-3 pr-8">
+        <a class="underline underline-offset-4" href="https://x.com/ln_dev7">Code by LN</a>
+        <span>-</span>
+        <a class="underline underline-offset-4" href="https://github.com/ln-dev7/Intro-Slider-Effect-Animation">GitHub</a>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
